@@ -1,0 +1,35 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 1200px;
+}
+
+/* servesice */
+.servesice{
+    display: flex;
+    padding: 30px 20px;
+
+
+}
+.heading{
+    text-align: center;
+    display: grid;
+    font-size: 30px;
+    padding: 100px 0 0;
+}
+.servesice .lite{
+    width: 5px;
+    background-color: darkgoldenrod;
+
+}
+.servesice .serv{
+    padding: 12PX;
+}
+.servesice .serv ul li{
+    padding: 10px;
+}
+.servesice .serv ul li::marker {
+    font-size: 20px;
+}
+/*\\ servesice \\*/

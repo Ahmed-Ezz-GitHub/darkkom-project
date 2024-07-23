@@ -1,0 +1,358 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 1200px;
+}
+
+/* # */
+#button {
+    width: 80px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #919191;
+    text-align: center;
+    text-decoration: none;
+    color: #000000;
+}
+
+#button:hover {
+    background-color: #292929;
+    color: beige;
+}
+
+/*\\ # \\*/
+
+/* navbar */
+.navpar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffffeccf;
+    position: fixed;
+    z-index: 1;
+    align-items: center;
+    padding: 0 3px;
+}
+
+.navpar #but {
+    all: unset;
+    border: none;
+    padding: 0 20px;
+    cursor: pointer;
+    height: 68px;
+    text-align: center;
+    font-size: 40px;
+    display: none;
+}
+
+.navpar #but.rot {
+    transform: rotate(360deg);
+    transition: 550ms;
+}
+
+.navpar #but #raw {
+    display: none;
+}
+
+.navpar #but #raw.block {
+    display: block;
+}
+
+.navpar #but #non.none {
+    display: none;
+}
+
+.navpar #list {
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+
+}
+
+.navpar ul {
+    display: flex;
+    /* align-items: center; */
+    justify-content: flex-end;
+}
+
+.navpar ul a {
+    text-decoration: none;
+    font-size: 25px;
+    color: #383838a6;
+    margin: 0
+}
+
+.navpar ul a li {
+    list-style: none;
+    padding: 0 15px;
+
+}
+
+.navpar ul a li:hover {
+    border-bottom: 1px solid #000000a1;
+    color: #000000;
+}
+
+@media (max-width:1000px) {
+
+
+    .navpar #but {
+        display: block;
+    }
+
+    .navpar #list {
+        width: 100px;
+        /* height: 100vh; */
+        padding: 10px;
+        transform: translatex(-100%);
+        transition: 550ms;
+        position: absolute;
+    }
+
+    .navpar #list.actef {
+        transform: none;
+    }
+
+    .navpar #list {
+        display: block;
+        background-color: #d2b356;
+        height: 50vh;
+        top: 0;
+    }
+    
+    .navpar #list a {
+        text-decoration: none;
+        font-size: 25px;
+        color: black;
+    }
+
+    .navpar #list a li {
+        padding: 10px 0;
+    }
+
+    .navpar #list a li:hover {
+        background-color: #7474746e;
+        transform: translatex(12%);
+        transition: 550ms;
+    }
+}
+
+@media (max-width:300px) {
+    .navpar #but {
+        padding: 0 10px;
+        height: 48px;
+        font-size: 30px;
+    }
+}
+
+/* panar */
+.cont-panar .panar {
+    height: 50vh;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    margin: auto;
+    line-height: 2;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)) , url(../image/t1v3jEB2SC28E0k5o6f_fw.png);
+    background-size: cover;
+    padding: 20px;
+    color: #fff;
+}
+@media (max-width:320px) {
+    .cont-panar .panar {
+        height: 60vh;
+    }
+}
+/*\\ panar \\*/
+/* about */
+.about {
+    padding: 20px;
+    display: flex;
+    /* text-align: center; */
+}
+.left-contant{
+    padding: 10px;
+    text-align: end;
+}
+.left-contant p {
+    padding: 20px;
+}
+
+.left-contant a {
+    padding: 18px;
+    text-decoration: none;
+    color: #000000;
+    padding: 5px;
+    border: #000000 solid 3px;
+
+}
+
+.left-contant a:hover {
+    border: 2px solid #d2b356;
+    color: #d2b356;
+}
+
+.about .rite-contant {
+    width: 70%;
+}
+
+.about .rite-contant img {
+    width: 100%;
+    border-radius: 10px;
+}
+@media (max-width:600px) {
+    .about {
+        display: grid;
+        gap: 25px;
+    }
+    .about .rite-contant {
+        width: 100%;
+    }
+}
+/*\\ about \\*/
+/* servuces */
+
+.Services {
+    display: flex;
+
+}
+
+.Services>div {
+    display: grid;
+    justify-items: center;
+    text-align: center;
+    padding: 20px;
+    width: 90%;
+}
+
+.Services>div .PERSONAL {
+    border: 10px solid white;
+    box-shadow: 1.5px 1.5px 7px rgba(0, 0, 0, 0.1);
+}
+
+.Services>div .PERSONAL:hover {
+    border: 10px solid #d2b356;
+
+}
+
+.Services>div .PERSONAL>div {
+    padding: 20px;
+}
+
+#cack-lorem {
+    background-color: #d2b356;
+}
+
+#cack-lorem p {
+    color: #fff;
+}
+
+.Services>div .PERSONAL .Lorem div {
+    display: inline-block;
+    position: relative;
+}
+
+.Services>div .PERSONAL .Lorem div span {
+    position: absolute;
+    top: 0;
+    left: -15px;
+}
+
+.Services>div .PERSONAL .lest {
+    padding: 20px 0;
+}
+
+.Services>div .PERSONAL .lest h3 {
+    padding: 15px 0;
+}
+
+/* style inbot */
+.Services>div .PERSONAL .link {
+    padding: 40px 0 60px;
+}
+
+.Services>div .PERSONAL .link a {
+    text-decoration: none;
+    padding: 15px 20px;
+    color: #3a3a38;
+    border: 3PX solid #3a3a38;
+}
+
+.Services>div .PERSONAL .link a:hover {
+    color: #d2b356;
+    border: 5PX solid #d2b356;
+}
+
+@media (max-width:800px) {
+    .Services {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (max-width:430px) {
+    .Services>div .PERSONAL .lest {
+        padding: 15px 0;
+    }
+
+    .Services>div .PERSONAL .lest h3 {
+        padding: 11px 0;
+    }
+
+    .Services>div .PERSONAL .link {
+        padding: 30px 0 50px;
+    }
+
+    .Services>div .PERSONAL .link a {
+
+        padding: 11px 15px;
+
+    }
+}
+
+/*\\ servuces \\*/
+/* footer */
+footer {
+    background-color: #d2b356;
+    padding: 20px 5%;
+}
+
+footer .list {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+
+footer .list a {
+    text-decoration: none;
+    font-size: 25px;
+    color: #000000a6;
+    margin: 0
+}
+
+footer .list a li {
+    list-style: none;
+    padding: 0 15px;
+
+}
+
+footer .list a li:hover {
+    border-bottom: 1px solid #000000a1;
+    color: #000000;
+}
+
+@media (max-width:430px) {
+    footer .list {
+        display: grid;
+        justify-content: space-evenly;
+        text-align: center;
+
+    }
+}
+
+/*\\ footer \\*/

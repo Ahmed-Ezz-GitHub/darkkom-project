@@ -1,0 +1,466 @@
+.apout-darkom .darkom {
+    height: 50vh;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    margin: auto;
+    line-height: 2;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../image/t1v3jEB2SC28E0k5o6f_fw.png);
+    background-size: cover;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+@media (max-width:400px) {
+    .apout-darkom .darkom {
+        height: 60vh;
+    }
+}
+
+
+
+
+
+
+.contenar-team {
+    padding: 20px;
+    display: grid;
+    justify-items: center;
+}
+
+.team {
+    width: 100%;
+    display: grid;
+    justify-content: center;
+
+    overflow: hidden;
+
+}
+
+.team .card-team {
+    /* width: 30%; */
+    /* background-color: bisque; */
+    display: grid;
+    justify-items: center;
+    padding: 15px;
+}
+
+.team .card-team .name-id {
+    display: grid;
+    justify-items: center;
+}
+
+.team .card-team .image img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 2px solid rgba(0, 0, 0, 0.781);
+}
+
+/* Advantages */
+.Advantages {
+    display: flex;
+
+}
+
+.Advantages>div {
+    display: grid;
+    justify-items: center;
+    text-align: center;
+    padding: 20px;
+    width: 90%;
+}
+
+.Advantages>div .PERSONAL {
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.3);
+}
+
+.Advantages>div .PERSONAL:hover {
+    background-color: #d2b356;
+    color: #fff;
+}
+
+.Advantages>div .PERSONAL>div {
+    padding: 20px;
+}
+
+#cack-lorem {
+    background-color: #d2b356;
+}
+
+#cack-lorem p {
+    color: #fff;
+}
+
+.Advantages>div .PERSONAL .Lorem div {
+    display: inline-block;
+    position: relative;
+}
+
+.Advantages>div .PERSONAL .Lorem div span {
+    position: absolute;
+    top: 0;
+    left: -15px;
+}
+
+.Advantages>div .PERSONAL .lest {
+    padding: 20px 0;
+}
+
+.Advantages>div .PERSONAL .lest h3 {
+    padding: 15px 0;
+}
+
+@media (max-width:800px) {
+    .Advantages {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (max-width:430px) {
+    .Advantages>div .PERSONAL .lest {
+        padding: 15px 0;
+    }
+
+    .Advantages>div .PERSONAL .lest h3 {
+        padding: 11px 0;
+    }
+
+    .Advantages>div .PERSONAL .link {
+        padding: 30px 0 50px;
+    }
+
+    .Advantages>div .PERSONAL .link a {
+
+        padding: 11px 15px;
+
+    }
+}
+
+/*\\ Advantages \\*/
+/* soshial */
+.soshial {
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    padding: 20px;
+    box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.3);
+    margin: 10px;
+}
+
+.soshial h2 {
+    padding: 10px 0;
+}
+
+.soshial p {
+    padding: 10px 0;
+}
+
+.soshial .FOLLOW-US a {
+    text-decoration: none;
+    padding: 5px;
+    border: 2px solid black;
+    color: black;
+
+}
+
+.soshial .FOLLOW-US a:hover {
+    border: 2px solid #d2b356;
+    color: #d2b356;
+
+}
+
+/* soshial */
+/* team */
+.body {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 50vh;
+    background-color: black;
+    overflow: hidden;
+    position: relative;
+}
+
+.slide-container {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    background-color: rgb(110, 110, 250);
+    position: relative;
+}
+
+.image-slider {
+    width: 100%;
+    height: 370px;
+    position: absolute;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+}
+
+.slides-div {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    margin: 15px;
+}
+
+.slides-div h4 {
+    margin: 0;
+}
+
+.img {
+    position: relative;
+    width: 170px;
+    height: 227px;
+    transition: 0.5s;
+}
+
+.button {
+    position: absolute;
+    width: 170px;
+    height: 247px;
+    transition: 0.5s;
+    background-color: rgba(25, 24, 40, 0.534);
+}
+
+#slider-span1:target~.image-slider #img1,
+#slider-span1:target~.image-slider #button-1 {
+    width: 200px;
+    height: 300px;
+    background-color: transparent;
+}
+
+#slider-span2:target~.image-slider #img2,
+#slider-span2:target~.image-slider #button-2 {
+    width: 200px;
+    height: 300px;
+    background-color: transparent;
+}
+
+#slider-span3:target~.image-slider #img3,
+#slider-span3:target~.image-slider #button-3 {
+    width: 200px;
+    height: 300px;
+    background-color: transparent;
+}
+
+#slider-span4:target~.image-slider #img4,
+#slider-span4:target~.image-slider #button-4 {
+    width: 200px;
+    height: 300px;
+    background-color: transparent;
+}
+
+#slider-span5:target~.image-slider #img5,
+#slider-span5:target~.image-slider #button-5 {
+    width: 200px;
+    height: 300px;
+    background-color: transparent;
+}
+
+#slider-span6:target~.image-slider #img6,
+#slider-span6:target~.image-slider #button-6 {
+    width: 200px;
+    height: 300px;
+    background-color: transparent;
+}
+
+
+#slider-span1:target~.image-slider {
+    left: 40%;
+}
+
+#slider-span2:target~.image-slider {
+    left: 30%;
+}
+
+#slider-span3:target~.image-slider {
+    left: 20%;
+}
+
+#slider-span4:target~.image-slider {
+    left: 0%;
+}
+
+#slider-span5:target~.image-slider {
+    left: -20%;
+}
+
+#slider-span6:target~.image-slider {
+    left: -30%;
+}
+
+
+
+/* //circle */
+
+.circle {
+    pointer-events: none;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    -webkit-mask: radial-gradient(var(--radius), transparent 100%, #000);
+    mask: radial-gradient(var(--radius), #0000 98%, #000);
+    backdrop-filter: blur(10px);
+    background: radial-gradient(calc(var(--radius) + 1px), #eee5 100%, #eee2);
+
+}
+
+.circle span {
+    display: block;
+    position: absolute;
+    height: calc(var(--radius) * 2 + 50px);
+    top: 50%;
+    left: 50%;
+    --rotate: 50deg;
+    transform: translate(-50%, -50%) rotate(var(--rotate));
+    text-transform: uppercase;
+    color: #fff;
+    font-size: small;
+    animation: circleRotate 20s linear infinite;
+}
+
+@keyframes circleRotate {
+    to {
+        transform: translate(-50%, -50%) rotate(calc(var(--rotate) + 360deg));
+    }
+}
+
+@media (max-width:500px) {
+    .body {
+        height: 40vh;
+    }
+
+    .slide-container {
+        height: 40vh;
+    }
+
+    .image-slider {
+        height: 150px;
+    }
+
+    .slides-div {
+        margin: 0 1px;
+    }
+
+    .slides-div h4 {
+        margin: 0;
+    }
+
+    .img {
+        width: 100px;
+        height: 150px;
+    }
+
+    .button {
+        width: 100px;
+        height: 168px;
+    }
+
+    #slider-span1:target~.image-slider #img1,
+    #slider-span1:target~.image-slider #button-1 {
+        width: 150px;
+        height: 200px;
+    }
+
+    #slider-span2:target~.image-slider #img2,
+    #slider-span2:target~.image-slider #button-2 {
+        width: 150px;
+        height: 200px;
+    }
+
+    #slider-span3:target~.image-slider #img3,
+    #slider-span3:target~.image-slider #button-3 {
+        width: 150px;
+        height: 200px;
+    }
+
+    #slider-span4:target~.image-slider #img4,
+    #slider-span4:target~.image-slider #button-4 {
+        width: 150px;
+        height: 200px;
+    }
+
+    #slider-span5:target~.image-slider #img5,
+    #slider-span5:target~.image-slider #button-5 {
+        width: 150px;
+        height: 200px;
+    }
+
+    #slider-span6:target~.image-slider #img6,
+    #slider-span6:target~.image-slider #button-6 {
+        width: 150px;
+        height: 200px;
+    }
+
+    #slider-span1:target~.image-slider {
+        left: 70%;
+    }
+
+    #slider-span2:target~.image-slider {
+        left: 65%;
+    }
+
+    #slider-span3:target~.image-slider {
+        left: 40%;
+    }
+
+    #slider-span4:target~.image-slider {
+        left: 0%;
+    }
+
+    #slider-span5:target~.image-slider {
+        left: -40%;
+    }
+
+    #slider-span6:target~.image-slider {
+        left: -65%;
+    }
+
+}
+
+@media (max-width:300px) {
+
+
+
+    #slider-span1:target~.image-slider {
+        left: 100%;
+    }
+
+    #slider-span2:target~.image-slider {
+        left: 65%;
+    }
+
+    #slider-span3:target~.image-slider {
+        left: 30%;
+    }
+
+    #slider-span4:target~.image-slider {
+        left: -16%;
+    }
+
+    #slider-span5:target~.image-slider {
+        left: -65%;
+    }
+
+    #slider-span6:target~.image-slider {
+        left: -100%;
+    }
+
+}
+
+/*\\ team\\ */
